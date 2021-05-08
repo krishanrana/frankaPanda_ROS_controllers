@@ -1,0 +1,26 @@
+
+# init conda
+conda-init
+conda activate krishan
+
+
+# Once to install workspace
+# this makes src and devel folders, allows nodes to run form anywhere
+# in krishan_ws directory
+catkin_make
+
+# In every terminal open to use ROS with your workspace
+# in krishan_ws directory
+source devel/setup.bash
+
+
+## OR SKIP THESE STEPS AND
+krishan
+
+##################################################################################
+
+# Running a node
+rosrun PACKAGE_NAME NODE_NAME
+
+
+
